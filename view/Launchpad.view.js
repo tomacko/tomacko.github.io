@@ -11,7 +11,7 @@ sap.ui.jsview("ui5bp.view.Launchpad", {
 
         var model = new sap.ui.model.json.JSONModel("model/menu.json");
         model.attachRequestCompleted(null, function() {
-            function navFn(target) {
+            function navFn( target) {
                 return function() {
                     oController.doNavOnSelect(target);
                 }
@@ -35,14 +35,15 @@ sap.ui.jsview("ui5bp.view.Launchpad", {
 
         });
 
+        var b = new sap.m.Button("myproLinkLP", {
+            text: "v0.8.0"
+        });
+
         var page = new sap.m.Page({
             setShowHeader: true,
             title: "UI5 Boilerplate Launchpad",
             footer: new sap.m.Bar({
-                contentMiddle: [new sap.m.Link("myproLinkLP", {
-                    text: "v0.8.0",
-                    href: "http://blog.mypro.de/tag/ui5boilerplate/"
-                })]
+                contentMiddle: [b]
 
             })
         });

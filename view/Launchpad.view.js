@@ -35,6 +35,9 @@ sap.ui.jsview("ui5bp.view.Launchpad", {
 
         });
 
+        var h = new sap.ui.core.HTML( "test" , {
+            content: '<div>Test</div>'
+        });
         var b = new sap.m.Button("myproLinkLP", {
             text: "v0.8.0"
         });
@@ -120,7 +123,7 @@ sap.ui.jsview("ui5bp.view.Launchpad", {
             setShowHeader: true,
             title: "UI5 Boilerplate Launchpad",
             footer: new sap.m.Bar({
-                contentMiddle: [b]
+                contentMiddle: [h]
 
             })
         });

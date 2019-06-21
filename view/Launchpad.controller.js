@@ -9,7 +9,7 @@ sap.ui.controller("ui5bp.view.Launchpad", {
 		oFileUploader.setAttribute('type', 'file');
 		oFileUploader.setAttribute('accept', 'image/*');
 		oFileUploader.setAttribute('capture', 'camera');
-		oFileUploader.style.display = "none";
+		//oFileUploader.style.display = "none";
 		oFileUploader.addEventListener("change", function (oEvt) {
 			var oFile = oEvt.srcElement.files[0];
 			var sFileFormat = oFile.type;

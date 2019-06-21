@@ -38,6 +38,9 @@ sap.ui.jsview("ui5bp.view.Launchpad", {
         var b = new sap.m.Button("myproLinkLP", {
             text: "v0.8.0"
         });
+        b.attachPress(function(event){
+            debugger;
+        });
 
         var page = new sap.m.Page({
             setShowHeader: true,

@@ -73,6 +73,7 @@ sap.ui.controller("ui5bp.view.Launchpad", {
 			// Seems Safari (iOS) doesn't like firing a change event if the input is not in the body
 			document.body.appendChild(oFileUploader);
 		}else{
+			event.preventDefault();
 			oFileUploader.click();
 		}
 

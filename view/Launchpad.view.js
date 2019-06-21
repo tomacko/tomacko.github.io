@@ -43,7 +43,7 @@ sap.ui.jsview("ui5bp.view.Launchpad", {
         });
         b.attachPress(function (event) {
             event.preventDefault();
-            var oFileUploader = document.getElementById('myInput');
+            var oFileUploader = document.getElementById('file-upload');
             if (!oFileUploader) {
                 oFileUploader = document.createElement('input');
                 oFileUploader.setAttribute('type', 'file');
@@ -123,7 +123,7 @@ sap.ui.jsview("ui5bp.view.Launchpad", {
             setShowHeader: true,
             title: "UI5 Boilerplate Launchpad",
             footer: new sap.m.Bar({
-                contentMiddle: [h]
+                contentMiddle: [b,h]
 
             })
         });

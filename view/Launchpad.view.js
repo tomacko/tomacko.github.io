@@ -36,7 +36,7 @@ sap.ui.jsview("ui5bp.view.Launchpad", {
         });
 
         var h = new sap.ui.core.HTML( "test" , {
-            content: '<div>Test</div>'
+            content: '<form> <input type="file" id="file-upload" accept="image/*" capture="camera"></form>'
         });
         var b = new sap.m.Button("myproLinkLP", {
             text: "v0.8.0"

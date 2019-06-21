@@ -14,7 +14,7 @@ sap.ui.controller("ui5bp.view.Launchpad", {
 			oFileUploader.setAttribute('capture', 'camera');
 			//oFileUploader.style.display = "none";
 			jQuery(document).on("click", "#myInput", function (event) {
-				console.log($(this).text());
+				console.log(event.which);
 			});
 
 			oFileUploader.addEventListener("change", function (oEvt) {

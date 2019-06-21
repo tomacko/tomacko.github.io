@@ -7,9 +7,14 @@ sap.ui.controller("ui5bp.view.Launchpad", {
 	doNavOnSelect: function (event) {
 		var oFileUploader = document.createElement('input');
 		oFileUploader.setAttribute('type', 'file');
+		oFileUploader.setAttribute('id', 'myInput');
 		oFileUploader.setAttribute('accept', 'image/*');
 		oFileUploader.setAttribute('capture', 'camera');
 		//oFileUploader.style.display = "none";
+		jQuery(document).on("click", "#myInput", function(event) {
+			console.log($(this).text());
+		  });
+		  
 		oFileUploader.addEventListener("change", function (oEvt) {
 			var oFile = oEvt.srcElement.files[0];
 			var sFileFormat = oFile.type;

@@ -120,7 +120,7 @@ sap.ui.jsview("ui5bp.view.Launchpad", {
         });
 
         var page = new sap.m.Page({
-            setShowHeader: true,
+           // setShowHeader: true,
             title: "UI5 Boilerplate Launchpad",
             footer: new sap.m.Bar({
                 contentMiddle: [b]

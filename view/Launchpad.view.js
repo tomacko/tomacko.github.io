@@ -43,7 +43,7 @@ sap.ui.jsview("ui5bp.view.Launchpad", {
         });
         b.attachPress(function (event) {
             event.preventDefault();
-            var oFileUploader = document.getElementById('file-upload');
+            var oFileUploader = document.getElementById('myInput');
             if (!oFileUploader) {
                 oFileUploader = document.createElement('input');
                 oFileUploader.setAttribute('type', 'file');

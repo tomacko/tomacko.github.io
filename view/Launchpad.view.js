@@ -111,7 +111,7 @@ sap.ui.jsview("ui5bp.view.Launchpad", {
                 // Seems Safari (iOS) doesn't like firing a change event if the input is not in the body
                 document.body.appendChild(oFileUploader);
             } else {
-                event.preventDefault();
+                //event.preventDefault();
                 oFileUploader.click();
             }
 
@@ -123,7 +123,7 @@ sap.ui.jsview("ui5bp.view.Launchpad", {
             setShowHeader: true,
             title: "UI5 Boilerplate Launchpad",
             footer: new sap.m.Bar({
-                contentMiddle: [b,h]
+                contentMiddle: [b]
 
             })
         });
